@@ -103,7 +103,6 @@ class WebhookTest extends TestCase {
     
     $ipnParams = array_merge($ipnParams, ['pSign' => $pSign]);
     
-    echo 'WebHookTest.php -> ' . print_r($ipnParams, true);
     return http_build_query($ipnParams);
   }
 }
